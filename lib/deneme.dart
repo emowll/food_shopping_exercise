@@ -20,8 +20,7 @@ class MyApp1 extends StatelessWidget {
 class AnimatedLoginPage extends StatefulWidget {
   const AnimatedLoginPage({super.key});
 
-  @override
-  // ignore: library_private_types_in_public_api
+  @override,
   _AnimatedLoginPageState createState() => _AnimatedLoginPageState();
 }
 
@@ -32,7 +31,7 @@ class _AnimatedLoginPageState extends State<AnimatedLoginPage> {
   @override
   void initState() {
     super.initState();
-    // Animasyonları başlatmak için initState içinde bir süreç ekleyebilirsiniz.
+ ,
     Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
         _opacity = 1.0;
@@ -104,7 +103,7 @@ class _AnimatedLoginPageState extends State<AnimatedLoginPage> {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  // Giriş yapma işlemi burada gerçekleştirilebilir.
+                ,
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
@@ -127,7 +126,7 @@ class _AnimatedLoginPageState extends State<AnimatedLoginPage> {
               const SizedBox(height: 20),
               TextButton(
                 onPressed: () {
-                  // Kayıt olma işlemi burada gerçekleştirilebilir.
+          ,
                 },
                 child: const Text(
                   'Hesap Oluştur',
